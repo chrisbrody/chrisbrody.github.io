@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Blog.css';
 import Meta from "../Meta"
 
@@ -85,14 +86,14 @@ function Blog() {
             <div className="blog-posts-container">
                 {blogPosts.map((post) => (
                     <div className="blog-post" key={post.id}>
-                        <a href={post.link} className="blog-post-link">
+                        <Link href={post.link} className="blog-post-link">
                             <img src={post.imageUrl} alt={post.title} className="blog-post-image" />
                             <div className="blog-post-content">
                                 <h3>{post.title}</h3>
                                 <p>{post.excerpt}</p>
                                 <span className="read-more">Read More →</span>
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 ))}
             </div>
