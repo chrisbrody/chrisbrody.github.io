@@ -1,0 +1,169 @@
+/* -------------------------------------
+   General Styles and Layout
+------------------------------------- */
+.services-section {
+    position: relative; /* For background waves */
+    padding: 120px 0; /* Increased padding */
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+    background: linear-gradient(to bottom, #FFF, #f9f9f9, #CCC);
+}
+
+/* Create an SVG Top Pattern */
+
+.services-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px; /* Adjust height as needed */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23FFFFFF' fill-opacity='1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,96C672,64,768,32,864,48C960,64,1056,128,1152,128C1248,128,1344,64,1392,32L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E"); /* Replace %23e9ecef with your desired pattern color */
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0; /* Place behind content */
+    pointer-events: none;
+}
+
+/* Section Heading */
+.services-section h2 {
+    position: relative; /* Needed for wave */
+    z-index: 10; /* Needed for wave */
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 70px;
+    color: #2c3e50;
+    display: inline-block;
+    padding-bottom: 18px;
+    letter-spacing: -1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the line */
+.services-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 5px;
+    width: 70px;
+    background-color: #3498db;
+    border-radius: 3px;
+}
+
+/* Services Container (Grid Layout) */
+.services-container {
+    position: relative; /* Needed for wave */
+    z-index: 10; /* Needed for wave */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* 2 columns, wider */
+    gap: 60px; /* Increased gap */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px; /* Side padding */
+}
+
+/* Service Item */
+.service {
+    background-color: rgba(255, 255, 255, 0.95); /* Almost opaque white */
+    padding: 50px; /* More padding */
+    border-radius: 20px; /* Rounder corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    position: relative;
+    overflow: hidden; /* Hide overflow for animation */
+    z-index: 1; /* Ensure it's above background */
+}
+
+/* Adds a subtle border that comes in on hover */
+.service::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent; /* Initially transparent */
+    border-radius: 20px;
+    transition: border-color 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service:hover::before {
+    /* This makes the transition more visible */
+    border-color: #3498db;
+}
+
+/* Service Heading */
+.service h3 {
+    font-family: 'Roboto Slab', serif; /* Use premium fonts */
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    align-items: center;
+    display: flex;
+    gap: 12px;
+    position: relative; /* Keep relative so the line can appear */
+    padding-bottom: 12px;
+    letter-spacing: -0.5px; /* Kerning */
+}
+
+/* Service Description */
+.service p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+    opacity: 0.9; /* Subdued */
+}
+
+.marginTop-50 {
+    margin-top: 60px; /* Increased margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* This removes the backgroud on smaller screens */
+    .services-section::before {
+        content: none;
+    }
+
+    .services-section {
+        padding: 80px 0 0;
+    }
+
+    .services-section h2 {
+        font-size: 2.6rem;
+        margin-bottom: 50px;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr; /* Stacked layout on small screens */
+        padding: 0 20px;
+    }
+
+    .service {
+        padding: 40px;
+    }
+
+    .service h3 {
+        font-size: 1.9rem;
+    }
+
+    .service p {
+        font-size: 1.1rem;
+    }
+
+    .marginTop-50 {
+        margin-top: 40px; /* Adjust button spacing */
+    }
+}

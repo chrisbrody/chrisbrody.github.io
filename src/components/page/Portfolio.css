@@ -1,0 +1,147 @@
+.portfolio-page.page {
+    padding-bottom: 0;
+}
+/* Blog Post Image */
+.project-image {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px solid #000;
+}
+
+.portfolio-header p {
+    font-family: 'Open Sans', sans-serif; /*Match Font */
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Projects Container (Grid Layout) */
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+/* Project Item */
+.project {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.28);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin: 45px 0;
+    padding: 30px 15px 15px;
+    height: 400px;
+}
+.project:first-child {
+    margin-top: 30px;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Project Link */
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: grid
+;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Project Content */
+.project-content {
+    padding: 30px;
+    text-align: left;
+}
+
+/* Project Title */
+.project-content h3 {
+    font-family: 'Roboto Slab', serif; /* Premium font choice */
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Project Description */
+.project-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Technologies Used */
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.technology {
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+/* View Project Link */
+.view-project {
+    display: inline-block;
+    font-weight: 600;
+    color: #3498db;
+    transition: color 0.3s ease;
+}
+
+.view-project:hover {
+    color: #2980b9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project {
+        height: inherit;
+    }
+
+    .project-image {
+        border: none;
+    }
+
+    .portfolio-header {
+        margin-bottom: 40px;
+    }
+
+    .portfolio-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .project-link {
+        grid-template-columns: 1fr;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 1.6rem;
+    }
+
+    .project-content p {
+        font-size: 1rem;
+    }
+}

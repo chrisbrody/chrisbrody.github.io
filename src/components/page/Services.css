@@ -1,0 +1,60 @@
+/* Services Page Container */
+.services-page {
+    position: relative;
+    background: linear-gradient(to bottom, #fff, #f9f9f9, #ccc);
+}
+
+/* Header Styles */
+.services-header {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1; /* Ensure it's above background */
+}
+
+/* Service Category Styles */
+.service-category {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: left;
+    position: relative; /* Needed for wave */
+}
+
+.service-category h2 {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.service-category h2::after {
+    height: 0;
+}
+.service-category ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .services-header {
+        margin-bottom: 40px;
+    }
+
+    .services-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .service-category {
+        margin-bottom: 60px;
+    }
+
+    .service-category h2 {
+        font-size: 2rem;
+    }
+}

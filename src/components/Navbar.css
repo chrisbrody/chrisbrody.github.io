@@ -1,0 +1,113 @@
+/* Navbar Container */
+.navbar {
+    position: fixed; /* Fix the navbar to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Ensure it's above other content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: transparent; /* Start transparent */
+}
+
+/* Add class to remove container effects */
+.navbar-container {
+    position: relative; /* Needed for positioning the menu */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar Brand/Logo */
+.navbar-brand a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    width: 225px;
+    padding-left: 15px;
+}
+
+/* Navbar Toggle (Hamburger Icon) */
+.navbar-toggle {
+    background-color: transparent;
+    border: none;
+    color: #3498db;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+}
+
+/* Navbar Menu (Links) */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+.navbar-menu a {
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar.scrolled .navbar-menu a:hover{
+    color: #3498db;
+}
+
+/* Styles for scrolled state */
+.navbar.scrolled {
+    background-color: white; /* White background when scrolled */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+}
+
+.navbar.scrolled .navbar-brand a,
+.navbar.scrolled .navbar-menu a {
+    color: black;
+}
+
+/* Hamburger Menu is Black */
+.navbar.scrolled .navbar-toggle{
+    color: black;
+}
+
+/* Mobile Styles (unchanged) */
+@media (max-width: 768px) {
+    /* Mobile-specific styles (hamburger menu, etc.) */
+    .navbar-menu {
+        display: none; /* Hide the menu by default on smaller screens */
+        position: absolute;
+        top: 100%; /* Position below the navbar */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        z-index: 10; /* Ensure it's above other content */
+        left: 0;
+        width: 100%;  /*Take up the whole width */
+        box-sizing: border-box; /*Include padding and border in the element's total width and height */
+    }
+
+    .navbar-menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .navbar-toggle {
+        color: white;
+        display: block; /* Show the hamburger icon */
+    }
+
+    .navbar-menu a {
+        color: black;
+        margin-left: 0;
+        margin-bottom: 15px;
+        display: block;
+    }
+}

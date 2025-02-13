@@ -1,0 +1,49 @@
+.cta-button {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    background-color: #3498db;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white !important;
+    color: white;
+    font-size: 1.3rem;
+    padding: 18px 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* This how to show the secondary button on hover */
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 150%;
+    height: 150%;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white overlay */
+    border-radius: 50%;
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    z-index: -1;
+}
+
+/* Show on Hover */
+.cta-button:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Expand the overlay on hover */
+    opacity: 1;
+}
+
+/* Animation on Hover */
+.cta-button:hover {
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.4);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}

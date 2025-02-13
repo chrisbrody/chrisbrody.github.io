@@ -1,0 +1,146 @@
+/* Header Styles */
+.about-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.about-header h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.about-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Section Styles */
+.about-page section {
+    max-width: 900px;
+    margin: 0 auto 80px;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.about-page h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
+}
+
+/* Style for the underline */
+.about-page h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 40px;
+    background-color: #3498db;
+    border-radius: 3px;
+}
+
+.about-page h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-page ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+.about-page li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Team Section Styles */
+.our-team {
+    text-align: center;
+}
+
+.team-member {
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    align-items: center;
+}
+
+.team-member-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member-title {
+    display: block;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Call to Action Styles */
+.about-page .call-to-action {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-header {
+        margin-bottom: 40px;
+    }
+
+    .about-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-page section {
+        margin-bottom: 60px;
+    }
+
+    .about-page h2 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        grid-template-columns: 1fr;
+    }
+
+    .team-member-image {
+        width: 150px;
+        height: 150px;
+    }
+}

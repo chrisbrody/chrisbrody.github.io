@@ -1,0 +1,80 @@
+#root {
+    background: linear-gradient(to bottom, #FFFFFF, #f9f9f9, #CCCCCC); /* Apply the gradient */
+}
+
+/* Header Styles */
+.contact-header {
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+
+.contact-header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Contact Details Styles */
+.contact-details {
+    margin: 0 auto 50px;
+    padding: 0 20px;
+}
+
+/* Call to Action Styles */
+.contact-cta {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contact-cta h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.2rem; /* Use a larger size */
+    font-weight: 700; /* Make it bold */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-cta p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-page.page {
+        padding-bottom: 78px;
+    }
+    .contact-header {
+        margin-bottom: 40px;
+    }
+
+    .contact-header h1 {
+        font-size: 2.4rem;
+    }
+
+    .contact-details {
+        margin-bottom: 40px;
+    }
+
+    .contact-cta {
+        padding: 30px;
+    }
+
+    .contact-cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-cta p {
+        font-size: 1rem;
+    }
+}

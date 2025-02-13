@@ -1,0 +1,105 @@
+/* -------------------------------------
+   Hero Section Container
+------------------------------------- */
+.hero-section {
+    position: relative;
+    overflow: hidden; /* Prevents issues with overflowing content */
+    background-color: #f0f4f8; /* Fallback color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)), url('https://live.staticflickr.com/65535/54254764492_cf91b0243b_c.jpg'); /* Improved overlay and URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 250px 0; /* Increased padding */
+    text-align: center;
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Adds a slanted bottom edge */
+}
+
+/* -------------------------------------
+   Pseudo-element Background Gradient
+------------------------------------- */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(240, 244, 248, 0.1) 0%, rgba(240, 244, 248, 0.25) 50%, rgba(240, 244, 248, 0.4) 100%);
+    z-index: 0; /* Place behind content */
+    pointer-events: none; /* Allows clicking through the pseudo-element */
+}
+
+/* -------------------------------------
+   Content Container
+------------------------------------- */
+.hero-content {
+    position: relative;
+    max-width: 950px; /* Wider content area */
+    margin: 0 auto;
+    padding: 40px; /* Increased padding */
+    border-radius: 15px;
+    z-index: 1; /* Ensure content is above overlay and background */
+}
+
+/* -------------------------------------
+   Typography Styles
+------------------------------------- */
+.hero-section h1 {
+    font-family: 'Roboto Slab', serif; /* Premium font choice */
+    font-size: 5.0rem; /* Larger, more impactful headline */
+    font-weight: 700;
+    margin-bottom: 40px; /* Increased margin */
+    color: white; /* Ensure text is white */
+    text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.7); /* Enhanced text shadow */
+    letter-spacing: -1.5px; /* Kerning adjustment */
+    animation: fadeInUp 1.2s ease-out; /* Animate the heading */
+}
+
+.hero-section p {
+    font-family: 'Open Sans', sans-serif; /* Clean, readable font */
+    font-size: 1.6rem; /* Increased paragraph font size */
+    margin-bottom: 50px; /* Increased margin */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent text */
+    line-height: 1.8; /* Improved readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 1.4s ease-out; /* Animate the paragraph */
+}
+
+/* -------------------------------------
+   Animations
+------------------------------------- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------------------------
+   Responsive Adjustments
+------------------------------------- */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 180px 0;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Adjust clip-path for smaller screens */
+    }
+
+    .hero-content {
+        padding: 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-section p {
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+    }
+}

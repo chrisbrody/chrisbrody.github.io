@@ -1,0 +1,103 @@
+.project-overview p {
+    text-align: left;
+}
+.project-image.details-page {
+    height: 100%;
+    border: none;
+}
+.project-details-page img {
+    width: 100%;
+}
+/* Style for every even */
+.project-section:nth-child(odd) {
+    display: flex; /* Enable Flexbox */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Put space between items */
+    padding: 20px;
+
+}
+
+/* Styles for project details */
+.project-section:nth-child(odd) .project-image {
+    flex: 1; /* Take up 1/2 of the section */
+    max-width: 50%;
+    padding: 15px;
+
+}
+
+.project-section:nth-child(odd) .project-content {
+    flex: 1; /* Take up 1/2 of the section */
+    max-width: 50%;
+    padding: 15px;
+
+}
+/* Style for every odd */
+.project-section:nth-child(even) {
+    display: flex; /* Enable Flexbox */
+    flex-direction: row-reverse; /* Arrange items in a row */
+    justify-content: space-between; /* Put space between items */
+    padding: 20px;
+
+}
+/* Styles for project details */
+.project-section:nth-child(even) .project-image {
+    flex: 1; /* Take up 1/2 of the section */
+    max-width: 50%;
+    padding: 15px;
+}
+
+.project-section:nth-child(even) .project-content {
+    flex: 1; /* Take up 1/2 of the section */
+    max-width: 50%;
+    padding: 15px;
+}
+
+.technologies.project-page {
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .project-section {
+        display: block /* Make all content all the same */
+    }
+    /* Styles for project details */
+    .project-section .project-image {
+        flex: 1; /* Take up 1/2 of the section */
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .project-section .project-content {
+        flex: 1; /* Take up 1/2 of the section */
+        max-width: 100%;
+        padding: 15px;
+
+    }
+
+    .project-section:nth-child(odd),
+    .project-section:nth-child(even) {
+        display: flex; /* Enable Flexbox */
+        flex-direction: column; /* Arrange items in a row */
+        align-items: center; /* Align vertically */
+        justify-content: space-between; /* Put space between items */
+        padding: 0;
+        text-align: center; /*This is key to center the content! */
+    }
+
+    /* Styles for project details */
+    .project-section:nth-child(odd) .project-image,
+
+    .project-section:nth-child(even) .project-image {
+        flex: 1; /* Take up 1/2 of the section */
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .project-section:nth-child(odd) .project-content,
+    .project-section:nth-child(even) .project-content{
+        flex: 1; /* Take up 1/2 of the section */
+        max-width: 100%;
+        padding: 0;
+
+    }
+}

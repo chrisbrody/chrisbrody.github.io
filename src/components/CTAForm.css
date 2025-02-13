@@ -1,0 +1,62 @@
+/* Call to Action Styles */
+.call-to-action {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    position: relative; /* Needed for wave */
+}
+
+.call-to-action h2 {
+    font-family: 'Roboto Slab', serif; /* Use premium fonts */
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #333;
+    align-items: center;
+    display: inline-block;
+    gap: 12px;
+    position: relative; /* Keep relative so the line can appear */
+    padding-bottom: 12px;
+    letter-spacing: -0.5px; /* Kerning */
+}
+
+/* This is what makes a nice blue line */
+.call-to-action h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 40px;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+.call-to-action p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 40px;
+    opacity: 0.9; /* Subdued */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+
+    .call-to-action {
+        padding: 15px;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .call-to-action p {
+        font-size: 1rem;
+    }
+}

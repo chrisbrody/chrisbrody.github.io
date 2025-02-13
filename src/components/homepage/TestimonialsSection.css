@@ -1,0 +1,101 @@
+/* Testimonials Section Container */
+.testimonials-section {
+    position: relative; /* Needed for pseudo-element positioning */
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(to bottom, #FFF, #E3E3E3, #FFF); /* Apply the gradient */
+}
+
+/* Section Heading */
+.testimonials-section h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #2c3e50;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.testimonials-section h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 60px;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Testimonial Item */
+.testimonial {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+/* Testimonial Quote */
+.testimonial-quote {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* Author Name */
+.testimonial-name {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+/* Author Company */
+.testimonial-company {
+    font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 60px 0;
+    }
+
+    .testimonials-section h2 {
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .testimonial {
+        padding: 30px;
+    }
+
+    .testimonial-quote {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,50 @@
+/* Terms Page Container */
+.terms-page {
+    padding: 120px 20px 60px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.terms-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.terms-header h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Section Styles */
+.terms-section {
+    margin-bottom: 30px;
+}
+
+.terms-section h2 {
+    font-size: 1.5em;
+    color: #444;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.terms-section h2::after {
+    height: 0;
+}
+
+.terms-section p {
+    font-size: 1em;
+    color: #666;
+    text-align: left;
+}
+
+/* Footer Styles */
+.terms-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.8em;
+}
