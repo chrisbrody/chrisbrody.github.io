@@ -10,7 +10,7 @@ function BlogPreviewSection() {
             excerpt:
                 'Learn how to leverage AI to enhance your customer service, from AI-powered chatbots to personalized support experiences. Boost customer satisfaction and streamline your support operations.',
             imageUrl: 'https://placehold.co/600x400/2ecc71/ffffff?text=AI+Customer+Service', // Placeholder image URL
-            link: './gwd/articles/2025/february/5-ways-ai-can-improve-your-customer-service',
+            link: '/blog/2025/february/5-ways-ai-can-improve-your-customer-service',
         },
         {
             id: 2,
@@ -18,7 +18,7 @@ function BlogPreviewSection() {
             excerpt:
                 'Protect your customers and your business by following our security best practices for building e-commerce websites with Shopify. Learn how to prevent fraud, secure payments, and protect sensitive data.',
             imageUrl: 'https://placehold.co/600x400/e74c3c/ffffff?text=Shopify+Security', // Placeholder image URL
-            link: './articles/2025/january/building-a-fortress-security-best-practices-for-your-shopify-e-commerce-website', // Replace with the actual link to your blog post
+            link: '/blog/2025/january/building-a-fortress-security-best-practices-for-your-shopify-e-commerce-website', // Replace with the actual link to your blog post
         },
     ];
 
