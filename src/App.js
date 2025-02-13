@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 
 
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 // SCROLL TOP FUNCTION
 import ScrollToTop from './components/ScrollToTop';
@@ -48,7 +48,22 @@ function App() {
           <div className="App">
               <Navbar />
               <Routes> {/* Use Routes instead of Switch */}
-
+                  <Route path="/" element={
+                      <>
+                          <Meta
+                              title="Groundworks Development: AI & Web Development Experts"
+                              description="Transforming businesses with AI & Expert Web Development. Contact us for a free consultation."
+                              keywords="AI, web development, AI integration, web design, digital marketing"
+                              imageURL=""
+                              reviewURL="/"
+                          />
+                          <HeroSection />
+                          <AboutUs />
+                          <ServicesSection />
+                          <TestimonialsSection />
+                          <BlogPreviewSection />
+                      </>
+                  } />
                   <Route path="/" element={<HomePage />} />
                   <Route path="/services" element={<Services />} />
                   <Route path="/portfolio" element={<Portfolio />} />
@@ -76,40 +91,6 @@ function App() {
           </div>
       </Router>
   );
-}
-
-function HomePage() {
-    const location = useLocation();
-    const pageTitle = "Groundworks Development: AI & Web Development Experts";
-    const pageDescription = "Transforming businesses with AI & Expert Web Development. Contact us for a free consultation.";
-    const pageKeywords = "AI, web development, AI integration, web design, digital marketing";
-    const imageURL = "";
-    const reviewURL = "/";
-
-    useEffect(() => {
-        const path = sessionStorage.getItem('redirect');
-        if (path) {
-            sessionStorage.removeItem('redirect');
-            window.location.pathname = path;
-        }
-    }, [location]);
-
-    return (
-        <>
-            <Meta
-                title={pageTitle}
-                description={pageDescription}
-                keywords={pageKeywords}
-                imageURL={imageURL}
-                reviewURL={reviewURL}
-            />
-            <HeroSection />
-            <AboutUs />
-            <ServicesSection />
-            <TestimonialsSection />
-            <BlogPreviewSection />
-        </>
-    );
 }
 
 export default App;
