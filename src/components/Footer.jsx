@@ -8,8 +8,8 @@ function Footer() {
             <div className="footer-content">
                 <p>© {new Date().getFullYear()} Groundworks Development. All rights reserved.</p>
                 <div className="footer-links">
-                    <Link href="/terms" rel="noopener noreferrer">Terms of Service</Link>
-                    <Link href="/privacy" rel="noopener noreferrer">Privacy Policy</Link>
+                    <Link to="/terms" rel="noopener noreferrer">Terms of Service</Link>
+                    <Link to="/privacy" rel="noopener noreferrer">Privacy Policy</Link>
                 </div>
             </div>
         </footer>

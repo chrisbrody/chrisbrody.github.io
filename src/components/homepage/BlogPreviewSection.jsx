@@ -30,7 +30,7 @@ function BlogPreviewSection() {
                 <div className="blog-posts-container">
                     {blogPosts.map((post) => (
                         <div className="blog-post" key={post.id}>
-                            <Link href={post.link} className="blog-post-link">
+                            <Link to={post.link} className="blog-post-link">
                                 <img src={post.imageUrl} alt={post.title} className="blog-post-image" />
                                 <div className="blog-post-content">
                                     <h3>{post.title}</h3>
