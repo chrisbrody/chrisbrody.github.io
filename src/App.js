@@ -76,13 +76,13 @@ function App() {
                   <Route path="/portfolio/:projectId" element={<ProjectDetails />} />
 
                   {/*Blogs*/}
-                  <Route path="gwd/articles/2025/february/5-ways-ai-can-improve-your-customer-service" element={<AiCustomerService />} />
-                  <Route path="gwd/articles/2025/january/ai-powered-chatbots-a-comprehensive-guide-to-transforming-your-customer-interactions" element={<AiChatbots />} />
-                  <Route path="gwd/articles/2025/january/building-a-fortress-security-best-practices-for-your-shopify-e-commerce-website" element={<EcommerceSecurity />} />
-                  <Route path="gwd/articles/2024/december/the-importance-of-mobile-first-web-design" element={<MobileFirst />} />
-                  <Route path="gwd/articles/2024/november/finding-your-perfect-match-how-to-choose-the-right-cms-for-your-business" element={<CMSChoice />} />
-                  <Route path="gwd/articles/2024/october/the-ultimate-guide-to-responsive-web-design-crafting-seamless-experiences-across-devices" element={<ResponsiveWebDesign />} />
-                  <Route path="gwd/articles/2024/september/unlock-the-power-of-seo-a-beginners-guide-to-ranking-higher" element={<PowerOfSeo />} />
+                  <Route path="/articles/2025/february/5-ways-ai-can-improve-your-customer-service" element={<AiCustomerService />} />
+                  <Route path="/articles/2025/january/ai-powered-chatbots-a-comprehensive-guide-to-transforming-your-customer-interactions" element={<AiChatbots />} />
+                  <Route path="/articles/2025/january/building-a-fortress-security-best-practices-for-your-shopify-e-commerce-website" element={<EcommerceSecurity />} />
+                  <Route path="/articles/2024/december/the-importance-of-mobile-first-web-design" element={<MobileFirst />} />
+                  <Route path="/articles/2024/november/finding-your-perfect-match-how-to-choose-the-right-cms-for-your-business" element={<CMSChoice />} />
+                  <Route path="/articles/2024/october/the-ultimate-guide-to-responsive-web-design-crafting-seamless-experiences-across-devices" element={<ResponsiveWebDesign />} />
+                  <Route path="/articles/2024/september/unlock-the-power-of-seo-a-beginners-guide-to-ranking-higher" element={<PowerOfSeo />} />
 
                   <Route path="*" element={<NotFound />} />
               </Routes>
