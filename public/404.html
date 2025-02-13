@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        sessionStorage.redirect = location.pathname;
+    </script>
+    <!-- This script redirects the user to the correct route in your React app -->
+    <script>
+        (function(l) {
+            if (l.search) {
+                var q = {};
+                l.search.slice(1).split('&').forEach(function(kvp) {
+                    var parts = kvp.split('=');
+                    q[parts[0]] = parts[1];
+                });
+                if (q.p && q.p !== l.pathname) {
+                    console.log('redirect', l.pathname, q.p);
+                    l.replace(q.p);
+                }
+            }
+        }(window.location))
+    </script>
+    <link rel="canonical" href="https://chrisbrody.github.io/" />
+    <meta http-equiv="refresh" content="0; url=https://chrisbrody.github.io/" />
+</head>
+<body>
+<p>If you are not redirected automatically, follow this <a href="https://chrisbrody.github.io/">link</a>.</p>
+</body>
+</html>
