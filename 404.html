@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        var sessionRedirect = sessionStorage.getItem('redirect');
+        if (sessionRedirect) {
+            sessionStorage.removeItem('redirect');
+            window.location.replace(sessionRedirect);
+        } else {
+            window.location.replace('/');
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
