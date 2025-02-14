@@ -1,28 +1,37 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a4003e1.css",
-    "main.js": "/static/js/main.82d53677.js",
+    "main.css": "/static/css/main.e51bbd18.css",
+    "main.js": "/static/js/main.abc196b3.js",
+    "static/media/stratis1.png": "/static/media/stratis1.812575b6ddc8fd822ba4.png",
+    "static/media/stratis3.png": "/static/media/stratis3.8acb7663c9a30cd91536.png",
     "static/media/monica-full.jpg": "/static/media/monica-full.d196826250990bd915a5.jpg",
     "static/media/monica1.png": "/static/media/monica1.ab239c9829ebe0b22114.png",
     "static/media/mammoth-full.png": "/static/media/mammoth-full.70777bf40d17cb522c97.png",
+    "static/media/stratis2.png": "/static/media/stratis2.29a776f10c7554336e46.png",
+    "static/media/mercury1.png": "/static/media/mercury1.5d29c40f60f247e5cfb3.png",
     "static/media/rialto1.png": "/static/media/rialto1.fe2dece55e4a1a393f53.png",
+    "static/media/mercury2.png": "/static/media/mercury2.46fb2a6875c08eaad3eb.png",
     "static/media/rialto2.png": "/static/media/rialto2.a48edac591c63fd023c7.png",
+    "static/media/stellis2.png": "/static/media/stellis2.5cf4d88579e54c45adf6.png",
+    "static/media/stellis1.png": "/static/media/stellis1.370913d739a655bb29eb.png",
     "static/media/gladden1.png": "/static/media/gladden1.6b3bae7ccf4c80fc00a8.png",
     "static/media/monica2.png": "/static/media/monica2.65afe742bb7eb20f6f86.png",
     "static/media/mammoth2.png": "/static/media/mammoth2.e56f8e9969f30c85a227.png",
     "static/media/monica3.png": "/static/media/monica3.911ac3d24d3501afcfff.png",
     "static/media/mammoth3.png": "/static/media/mammoth3.350fe33965d403373286.png",
+    "static/media/mercury3.png": "/static/media/mercury3.bcecddff82800dd128f2.png",
     "static/media/gladden3.png": "/static/media/gladden3.c514bccda5c92f11d09b.png",
     "static/media/brody.jpg": "/static/media/brody.2adb4218eec9e8952ea4.jpg",
     "static/media/logo.png": "/static/media/logo.51c331d7780dc4ce8da9.png",
+    "static/media/stellis3.png": "/static/media/stellis3.aabf55d54f9f318e7008.png",
     "static/media/rialto3.png": "/static/media/rialto3.7ad07d352e474b2cda79.png",
     "static/media/gladden2.png": "/static/media/gladden2.dcf4396c8d3f4f788d48.png",
     "index.html": "/index.html",
-    "main.8a4003e1.css.map": "/static/css/main.8a4003e1.css.map",
-    "main.82d53677.js.map": "/static/js/main.82d53677.js.map"
+    "main.e51bbd18.css.map": "/static/css/main.e51bbd18.css.map",
+    "main.abc196b3.js.map": "/static/js/main.abc196b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a4003e1.css",
-    "static/js/main.82d53677.js"
+    "static/css/main.e51bbd18.css",
+    "static/js/main.abc196b3.js"
   ]
 }
