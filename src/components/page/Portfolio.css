@@ -32,7 +32,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     overflow: hidden;
     margin: 45px 0;
-    padding: 30px 15px 15px;
+    padding: 30px 15px 0;
     height: 400px;
 }
 .project:first-child {

@@ -7,6 +7,9 @@ import rialtoImg1 from '../../assets/images/portfolio/rialto1.png';
 import gladdenImg1 from '../../assets/images/portfolio/gladden1.png';
 import monicaImg1 from '../../assets/images/portfolio/monica-full.jpg';
 import mammothImg1 from '../../assets/images/portfolio/mammoth-full.png';
+import mercuryImg1 from '../../assets/images/portfolio/mercury1.png';
+import stellisImg1 from '../../assets/images/portfolio/stellis1.png';
+import stratisImg1 from '../../assets/images/portfolio/stratis1.png';
 
 function Portfolio() {
     const pageTitle = "Portfolio | GroundWorks Development";
@@ -37,6 +40,39 @@ function Portfolio() {
         },
         {
             id: 3,
+            title: 'Stellis Health',
+            shortDescription: "Developed a custom employee directory and improved website performance for a leading healthcare provider.",
+            slug: 'stellis-health',
+            description:
+                'Developed a custom employee directory and improved website performance for a leading healthcare provider.',
+            imageUrl: stellisImg1,
+            technologies: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript'],
+            link: 'https://stellishealth.com/',
+        },
+        {
+            id: 4,
+            title: 'Stratis Industries',
+            shortDescription: "Ongoing website management and updates for a custom manufacturing company.",
+            slug: 'stratis-industries',
+            description:
+                'Providing ongoing website maintenance, updates, and content creation for Stratis Industries, a custom manufacturing company specializing in 3D laminated casegoods, wall panels, and fixture components.',
+            imageUrl: stratisImg1,
+            technologies: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript'],
+            link: 'https://stratisindustries.com/',
+        },
+        {
+            id: 5,
+            title: 'Ship Mercury',
+            shortDescription: "Developed the front-end for Ship Mercury's shipping department, streamlining labeling and tracking.",
+            slug: 'ship-mercury',
+            description:
+                'As part of a team of four developers and a project manager, I was responsible for building out the front-end for Ship Mercury\'s shipping department. This involved creating a user-friendly interface for generating shipping labels, tracking deliveries, and managing shipping information. The goal was to streamline their shipping operations and improve efficiency.',
+            imageUrl: mercuryImg1,
+            technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
+            link: 'https://shipmercury.com/',
+        },
+        {
+            id: 6,
             title: 'Monica\'s Gourmet Cookies',
             slug: 'monicas-gourmet',
             description:
@@ -46,7 +82,7 @@ function Portfolio() {
             link: 'https://monicasgourmet.com',
         },
         {
-            id: 4,
+            id: 7,
             title: 'Mammoth Tap',
             slug: 'mammoth-beer',
             description:
@@ -54,8 +90,7 @@ function Portfolio() {
             imageUrl: mammothImg1,
             technologies: ['Shopify', 'HTML', 'CSS', 'JavaScript', 'Liquid', 'Responsive Design', 'UI/UX Design', 'E-commerce Optimization'],
             link: 'https://mammothbeer.com',
-        },
-        // Add more projects as needed
+        }
     ];
 
     return (

@@ -18,6 +18,15 @@ import monicaImg3 from '../../assets/images/portfolio/monica3.png';
 import mammothImg1 from '../../assets/images/portfolio/mammoth-full.png';
 import mammothImg2 from '../../assets/images/portfolio/mammoth2.png';
 import mammothImg3 from '../../assets/images/portfolio/mammoth3.png';
+import mercuryImg1 from '../../assets/images/portfolio/mercury1.png';
+import mercuryImg2 from '../../assets/images/portfolio/mercury2.png';
+import mercuryImg3 from '../../assets/images/portfolio/mercury3.png';
+import stellisImg1 from '../../assets/images/portfolio/stellis1.png';
+import stellisImg2 from '../../assets/images/portfolio/stellis2.png';
+import stellisImg3 from '../../assets/images/portfolio/stellis3.png';
+import stratisImg1 from '../../assets/images/portfolio/stratis1.png';
+import stratisImg2 from '../../assets/images/portfolio/stratis2.png';
+import stratisImg3 from '../../assets/images/portfolio/stratis3.png';
 
 function ProjectDetails() {
     const { projectId } = useParams();  // Get the projectId from the URL
@@ -56,7 +65,7 @@ function ProjectDetails() {
             </header>
 
             <section className="project-overview">
-                <h2>Project Overview</h2>
+                <h2>Overview</h2>
                 <p>{project.overview}</p>
             </section>
 
@@ -146,6 +155,69 @@ function getProjectDetails(projectId) {
         },
         {
             id: 3,
+            title: 'Stellis Health',
+            secondHeader: 'Custom Employee Directory & Performance Enhancements',
+            shortDescription: "Developed a custom employee directory and improved website performance for a leading healthcare provider.",
+            slug: 'stellis-health',
+            description:
+                'Stellis Health, a trusted healthcare provider, needed a way to improve internal communication and streamline access to employee information. They also wanted to enhance the performance of their existing WordPress website to improve user experience and attract more patients. I was brought on to develop a custom employee directory and assist their marketing team with website optimization.',
+            mainImage: stellisImg1,
+            imageUrl: stellisImg1,
+            technologies: ['WordPress', 'PHP', 'HTML', 'CSS', 'JavaScript', 'MySQL', 'Performance Optimization', 'Web Server Management'],
+            link: 'https://stellishealth.com/',
+            overview: "This project involved two key components: building a custom employee directory on the Stellis Health WordPress website and improving the website's overall performance. The employee directory needed to be user-friendly, searchable, and easily maintainable by the Stellis Health team. The performance optimization aimed to reduce loading times, improve SEO, and enhance the overall user experience.",
+            challenges: "The main challenges were integrating the custom employee directory seamlessly with the existing WordPress website and optimizing the website's performance without disrupting its functionality. The existing code base was complex and poorly documented, making it difficult to identify and address performance bottlenecks. We also had to ensure that the employee directory was secure and compliant with HIPAA regulations.",
+            solutions: "For the employee directory, I developed a custom WordPress plugin using PHP, HTML, CSS, and JavaScript. The plugin integrated seamlessly with the existing WordPress user management system and provided a user-friendly interface for searching and browsing employee information. To improve website performance, I conducted a thorough audit of the website's code, images, and server configuration. I then implemented a variety of optimization techniques, including image compression, code minification, caching, and database optimization. I also worked with the Stellis Health marketing team to migrate the website to a faster and more reliable hosting provider.",
+            results: "The new employee directory has streamlined internal communication and made it easier for Stellis Health employees to find the information they need. The website's performance has also improved significantly, resulting in faster loading times, a better user experience, and improved SEO rankings. The website is now faster and more responsive, and the team is able to spend more time on other tasks. I was also on call, to assist, while the website was moved from one domain to the current domain.",
+            pageDescription: "Developed a custom employee directory and improved website performance for Stellis Health, a leading healthcare provider.",
+            image1: stellisImg1,
+            image2: stellisImg2,
+            image3: stellisImg3
+        },
+        {
+            id: 4,
+            title: 'Stratis Industries',
+            secondHeader: 'Ongoing Website Management & Enhancements',
+            shortDescription: "Providing ongoing website maintenance, updates, and content creation for a leading custom manufacturing company.",
+            slug: 'stratis-industries',
+            description:
+                'Stratis Industries, a custom manufacturing company specializing in 3D laminated casegoods, wall panels, and fixture components, relies on Groundworks Development for ongoing website maintenance, updates, and content creation. I work closely with their team to ensure that their website accurately reflects their brand, showcases their capabilities, and attracts new clients in various industries.',
+            mainImage: stratisImg1,
+            imageUrl: stratisImg1,
+            technologies: ['WordPress', 'HTML', 'CSS', 'JavaScript', 'PHP', 'Responsive Design', 'Content Management', 'SEO'],
+            link: 'https://stratisindustries.com/',
+            overview: "This project involves providing ongoing website maintenance, updates, and content creation for Stratis Industries. The goal is to ensure that their website remains a valuable marketing tool that accurately reflects their brand, showcases their capabilities, and attracts new clients in various industries. This includes adding new product information, updating case studies, optimizing the website for search engines, and ensuring a seamless user experience across all devices.",
+            challenges: "The main challenges involve keeping the website fresh and up-to-date with Stratis Industries' ever-evolving product line and capabilities. It's also important to ensure that the website accurately reflects their brand and target audience, which includes healthcare facilities, interior designers, architects, and manufacturers in a wide range of industries. The original website was also hard to use and make changes",
+            solutions: "To address these challenges, I work closely with the Stratis Industries team to understand their evolving needs and priorities. I use a combination of WordPress development, HTML, CSS, and JavaScript to implement new features, update content, and optimize the website for performance. I also use SEO best practices to improve the website's search engine ranking and attract more organic traffic.",
+            results: "By providing ongoing website maintenance and updates, I've helped Stratis Industries maintain a strong online presence and attract new clients in various industries. The website is now a valuable marketing tool that accurately reflects their brand, showcases their capabilities, and drives leads and sales. The client is very happy that the website is in good hands.",
+            pageDescription: "Providing ongoing website maintenance, updates, and content creation for Stratis Industries, a custom manufacturing company.",
+            image1: stratisImg1,
+            image2: stratisImg2,
+            image3: stratisImg3
+        },
+        {
+            id: 5,
+            title: 'Ship Mercury',
+            secondHeader: 'Shipping Department Front-End Development',
+            shortDescription: "Developed the front-end for Ship Mercury's shipping department, streamlining labeling and tracking.",
+            slug: 'ship-mercury',
+            description:
+                'As part of a team of four developers and a project manager, I was responsible for building out the front-end for Ship Mercury\'s shipping department. This involved creating a user-friendly interface for generating shipping labels, tracking deliveries, and managing shipping information. The goal was to streamline their shipping operations and improve efficiency.',
+            mainImage: mercuryImg1,
+            imageUrl: mercuryImg1,
+            technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'REST APIs', 'Git', 'Agile'],
+            link: 'https://shipmercury.com/',
+            overview: "This project focused on improving the efficiency and user experience of Ship Mercury's shipping department. The existing system was manual and time-consuming, leading to errors and delays. The new front-end needed to be intuitive, reliable, and scalable to handle a large volume of shipping transactions.",
+            challenges: "The main challenges involved integrating with Ship Mercury's existing backend systems, handling complex shipping calculations, and ensuring that the front-end was responsive and accessible across all devices. We also had to work closely with the shipping department to understand their specific needs and requirements.",
+            solutions: "I used React to build a dynamic and responsive front-end that integrated seamlessly with Ship Mercury's existing REST APIs. I also implemented a variety of UI components and features to streamline the labeling and tracking process. Regular communication and collaboration with the team was key to ensuring the project was successful.",
+            results: "The new front-end has significantly streamlined Ship Mercury's shipping operations, reducing errors and improving efficiency. The shipping department is now able to process orders faster and more accurately, leading to increased customer satisfaction and reduced shipping costs.",
+            pageDescription: "Developed the front-end for Ship Mercury's shipping department, streamlining labeling and tracking.",
+            image1: mercuryImg1,
+            image2: mercuryImg2,
+            image3: mercuryImg3
+        },
+        {
+            id: 6,
             title: 'Monica\'s Gourmet Cookies',
             secondHeader: 'Delicious E-Commerce Transformation',
             shortDescription: "Developed a visually irresistible Shopify e-commerce store, boosting online cookie sales.",
@@ -166,7 +238,7 @@ function getProjectDetails(projectId) {
             image3: monicaImg3
         },
         {
-            id: 4,
+            id: 7,
             title: 'Mammoth Tap',
             secondHeader: 'Thriving Shopify Brand Store',
             shortDescription: "Transformed Mammoth Beer's online presence, boosting sales and freeing up time to focus on brewing.",
