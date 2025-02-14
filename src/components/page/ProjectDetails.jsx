@@ -39,6 +39,7 @@ function ProjectDetails() {
             />
             <header className="project-header">
                 <h1>{project.title}</h1>
+                <h2>{project.secondHeader}</h2>
                 <div className="project-header-content">
                     <div className="project-summary">
                         <p>{project.shortDescription}</p>
@@ -103,7 +104,8 @@ function getProjectDetails(projectId) {
     const projects = [
         {
             id: 1,
-            title: 'Rialto Vacations - Modernized Booking Platform',
+            title: 'Rialto Vacations',
+            secondHeader: 'Modernized Booking Platform',
             shortDescription: "Transformed an outdated travel website into a sleek, high-performing booking platform.",
             slug: 'rialto-vacations',
             description:
@@ -123,7 +125,8 @@ function getProjectDetails(projectId) {
         },
         {
             id: 2,
-            title: 'AI-Powered Scholarly Research Assistant',
+            title: 'Gladden Longevity',
+            secondHeader: 'AI-Powered Scholarly Research Assistant',
             shortDescription: "Developed an AI-powered chatbot to help doctors access and understand complex scholarly research.",
             slug: 'gladden-longevity',
             description:
@@ -143,7 +146,8 @@ function getProjectDetails(projectId) {
         },
         {
             id: 3,
-            title: 'Monica\'s Gourmet Cookies - Delicious E-Commerce Transformation',
+            title: 'Monica\'s Gourmet Cookies',
+            secondHeader: 'Delicious E-Commerce Transformation',
             shortDescription: "Developed a visually irresistible Shopify e-commerce store, boosting online cookie sales.",
             slug: 'monicas-gourmet',
             description:
@@ -163,7 +167,8 @@ function getProjectDetails(projectId) {
         },
         {
             id: 4,
-            title: 'Mammoth Beer - Thriving Shopify Brand Store',
+            title: 'Mammoth Tap',
+            secondHeader: 'Thriving Shopify Brand Store',
             shortDescription: "Transformed Mammoth Beer's online presence, boosting sales and freeing up time to focus on brewing.",
             slug: 'mammoth-beer',
             description:

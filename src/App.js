@@ -18,6 +18,7 @@ import Footer from './components/Footer';
 import HeroSection from './components/homepage/HeroSection';
 import AboutUs from './components/homepage/AboutUs';
 import ServicesSection from './components/homepage/ServicesSection';
+import ProjectsSection from './components/homepage/ProjectsSection';
 import TestimonialsSection from './components/homepage/TestimonialsSection';
 import BlogPreviewSection from './components/homepage/BlogPreviewSection';
 
@@ -31,6 +32,8 @@ import Terms from './components/page/Terms';
 import Privacy from "./components/page/Privacy";
 import NotFound from './components/page/NotFound';
 import ProjectDetails from './components/page/ProjectDetails';
+
+
 
 // BLOGS
 import AiCustomerService from "./components/blog/2025/february/5-ways-ai-can-improve-your-customer-service"
@@ -106,6 +109,7 @@ function HomePage() {
             <HeroSection />
             <AboutUs />
             <ServicesSection />
+            <ProjectsSection />
             <TestimonialsSection />
             <BlogPreviewSection />
         </>

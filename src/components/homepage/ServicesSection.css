@@ -127,7 +127,10 @@
 }
 
 .marginTop-50 {
-    margin-top: 60px; /* Increased margin */
+    margin-top: 60px;
+}
+.marginBot-50 {
+    margin-bottom: 60px;
 }
 
 /* Responsive Adjustments */

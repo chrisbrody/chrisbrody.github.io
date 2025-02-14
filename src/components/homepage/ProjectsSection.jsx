@@ -1,19 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Portfolio.css';
-import Meta from "../Meta"
 
 import rialtoImg1 from '../../assets/images/portfolio/rialto1.png';
 import gladdenImg1 from '../../assets/images/portfolio/gladden1.png';
-import monicaImg1 from '../../assets/images/portfolio/monica-full.jpg';
-import mammothImg1 from '../../assets/images/portfolio/mammoth-full.png';
 
-function Portfolio() {
-    const pageTitle = "Portfolio | GroundWorks Development";
-    const pageDescription = "View our web development and AI integration portfolio. We build custom websites, e-commerce stores, and AI-powered solutions for businesses. See examples of our work with React, Node.js, Shopify, and more.";
-    const pageKeywords = "web development portfolio, AI integration, custom website development, e-commerce development, React development, Node.js development, Shopify development, AI-powered solutions, web design, software development, frontend development, backend development";
-    const pageType = "Page"
-
+function ProjectsSection() {
     const projects = [
         {
             id: 1,
@@ -34,40 +25,13 @@ function Portfolio() {
             imageUrl: gladdenImg1,
             technologies: ['React', 'Node.js', 'Python', 'AWS', 'Docker', 'Agile', 'CI/CD', 'Github'],
             link: 'https://start.gladdenlongevity.com/ai',
-        },
-        {
-            id: 3,
-            title: 'Monica\'s Gourmet Cookies',
-            slug: 'monicas-gourmet',
-            description:
-                'Designed and developed a custom e-commerce store to help Monica sell her delicious cookies online. Integrated secure payment processing and a user-friendly ordering system.',
-            imageUrl: monicaImg1,
-            technologies: ['Shopify', 'HTML', 'CSS', 'JavaScript', 'Responsive Design', 'UI/UX Design', 'E-commerce Optimization'],
-            link: 'https://monicasgourmet.com',
-        },
-        {
-            id: 4,
-            title: 'Mammoth Tap',
-            slug: 'mammoth-beer',
-            description:
-                'Enhanced the shopify design to allow for great shopability and sales of swag',
-            imageUrl: mammothImg1,
-            technologies: ['Shopify', 'HTML', 'CSS', 'JavaScript', 'Liquid', 'Responsive Design', 'UI/UX Design', 'E-commerce Optimization'],
-            link: 'https://mammothbeer.com',
-        },
-        // Add more projects as needed
+        }
     ];
 
     return (
-        <div className="portfolio-page page">
-            <Meta
-                title={pageTitle}
-                description={pageDescription}
-                keywords={pageKeywords}
-                pageType={pageType}
-            />
+        <div className="projects-section marginBot-50">
             <header className="portfolio-header">
-                <h1>Portfolio</h1>
+                <h1>Recent Projects</h1>
                 <p>
                     A selection of our recent web development and AI integration projects.
                 </p>
@@ -96,4 +60,5 @@ function Portfolio() {
     );
 }
 
-export default Portfolio;
+
+export default ProjectsSection;

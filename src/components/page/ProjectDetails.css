@@ -1,3 +1,16 @@
+.project-header h2 {
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    margin: 0;
+    color: #555;
+}
+.project-header h2::after {
+    height: 0;
+}
+.project-summary p {
+    margin-top: 0;
+}
 .project-overview p {
     text-align: left;
 }
