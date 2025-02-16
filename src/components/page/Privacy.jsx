@@ -3,7 +3,7 @@ import './Privacy.css';
 import Meta from "../Meta";
 
 function Privacy() {
-    const pageTitle = "Privacy Policy | GroundWorks Development";
+    const pageTitle = "Privacy Policy | Brody | GroundWorks Development";
     const pageDescription = "GroundWorks Development Privacy Policy. Review our policy on data collection, usage, security, and your rights regarding your personal information. Contact us at groundworksdevelopment@gmail.com.";
     const pageKeywords = "Privacy Policy, GroundWorks Development, data privacy, personal information, data security, cookies policy, website privacy, privacy rights, GDPR compliance, CCPA compliance, groundworksdevelopment@gmail.com";
     const pageType = "Page"

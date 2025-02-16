@@ -6,7 +6,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <p>© {new Date().getFullYear()} Groundworks Development. All rights reserved.</p>
+                <p>© {new Date().getFullYear()}  Brody | Groundworks Development. All rights reserved.</p>
                 <div className="footer-links">
                     <Link to="/terms" rel="noopener noreferrer">Terms of Service</Link>
                     <Link to="/privacy" rel="noopener noreferrer">Privacy Policy</Link>

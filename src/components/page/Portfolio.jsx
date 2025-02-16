@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Portfolio.css';
 import Meta from "../Meta"
@@ -12,7 +12,7 @@ import stellisImg1 from '../../assets/images/portfolio/stellis1.png';
 import stratisImg1 from '../../assets/images/portfolio/stratis1.png';
 
 function Portfolio() {
-    const pageTitle = "Portfolio | GroundWorks Development";
+    const pageTitle = "Portfolio | Brody | GroundWorks Development";
     const pageDescription = "View our web development and AI integration portfolio. We build custom websites, e-commerce stores, and AI-powered solutions for businesses. See examples of our work with React, Node.js, Shopify, and more.";
     const pageKeywords = "web development portfolio, AI integration, custom website development, e-commerce development, React development, Node.js development, Shopify development, AI-powered solutions, web design, software development, frontend development, backend development";
     const pageType = "Page"
@@ -93,6 +93,15 @@ function Portfolio() {
         }
     ];
 
+    const [selectedTechnology, setSelectedTechnology] = useState('All');
+
+    const uniqueTechnologies = ['All', ...new Set(projects.flatMap(project => project.technologies))];
+
+    const filteredProjects = selectedTechnology === 'All'
+        ? projects
+        : projects.filter(project => project.technologies.includes(selectedTechnology));
+
+
     return (
         <div className="portfolio-page page">
             <Meta
@@ -108,8 +117,20 @@ function Portfolio() {
                 </p>
             </header>
 
+            <div className="filters">
+                {uniqueTechnologies.map(tech => (
+                    <button
+                        key={tech}
+                        className={`filter-button ${selectedTechnology === tech ? 'active' : ''}`}
+                        onClick={() => setSelectedTechnology(tech)}
+                    >
+                        {tech}
+                    </button>
+                ))}
+            </div>
+
             <div className="projects-container">
-                {projects.map((project) => (
+                {filteredProjects.map((project) => (
                     <div className="project" key={project.id}>
                         <Link to={`/portfolio/${project.slug}`} className="project-link">
                             <img src={project.imageUrl} alt={project.title} className="project-image"/>

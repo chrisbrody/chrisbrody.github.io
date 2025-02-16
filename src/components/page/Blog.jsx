@@ -4,7 +4,7 @@ import './Blog.css';
 import Meta from "../Meta"
 
 function Blog() {
-    const pageTitle = "Blog | GroundWorks Development";
+    const pageTitle = "Blog | Brody | GroundWorks Development";
     const pageDescription = "GroundWorks Development Blog: Stay up-to-date with the latest web development and AI news, insights, and tutorials. Learn about AI in customer service, e-commerce security, responsive design, SEO, and more.";
     const pageKeywords = "web development blog, AI blog, AI integration blog, web design blog, e-commerce security, responsive web design, SEO tips, AI customer service, Shopify security, mobile-first web design, CMS selection, GroundWorks Development blog";
     const pageType = "Page"

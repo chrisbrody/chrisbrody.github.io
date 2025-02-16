@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Meta from "../Meta"
 
 function NotFound() {
-    const pageTitle = "404 - Page Not Found | GroundWorks Development";
+    const pageTitle = "404 - Page Not Found | Brody | GroundWorks Development";
     const pageDescription = "";
     const pageKeywords = "";
     const pageType = "Page"

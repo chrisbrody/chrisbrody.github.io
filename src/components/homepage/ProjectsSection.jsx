@@ -58,8 +58,9 @@ function ProjectsSection() {
             <header className="portfolio-header">
                 <h1>Recent Projects</h1>
                 <p>
-                    A selection of our recent web development and AI integration projects.
+                    A selection of some recent web development and AI integration projects.
                 </p>
+                <a href="./portfolio">View More</a>
             </header>
 
             <div className="projects-container">

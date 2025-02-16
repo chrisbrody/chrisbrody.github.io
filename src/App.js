@@ -26,7 +26,6 @@ import BlogPreviewSection from './components/homepage/BlogPreviewSection';
 import Services from './components/page/Services';
 import Portfolio from './components/page/Portfolio';
 import Blog from './components/page/Blog';
-import About from './components/page/About';
 import Contact from './components/page/Contact';
 import Terms from './components/page/Terms';
 import Privacy from "./components/page/Privacy";
@@ -56,7 +55,6 @@ function App() {
                   <Route path="/services" element={<Services />} />
                   <Route path="/portfolio" element={<Portfolio />} />
                   <Route path="/blog" element={<Blog />} />
-                  <Route path="/about" element={<About />} />
                   <Route path="/contact" element={<Contact />} />
                   <Route path="/terms" element={<Terms />} />
                   <Route path="/privacy" element={<Privacy />} />
@@ -83,7 +81,7 @@ function App() {
 
 function HomePage() {
     const location = useLocation();
-    const pageTitle = "Groundworks Development: AI & Web Development Experts";
+    const pageTitle = "Brody | Groundworks Development: AI & Web Development Experts";
     const pageDescription = "Transforming businesses with AI & Expert Web Development. Contact us for a free consultation.";
     const pageKeywords = "AI, web development, AI integration, web design, digital marketing";
     const imageURL = "";

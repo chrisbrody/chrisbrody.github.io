@@ -3,7 +3,7 @@ import './Terms.css';
 import Meta from "../Meta"
 
 function Terms() {
-    const pageTitle = "Terms of Service | GroundWorks Development";
+    const pageTitle = "Terms of Service | Brody | GroundWorks Development";
     const pageDescription = "Terms of Service for GroundWorks Development. Review our terms and conditions for using our website and engaging our web development and AI integration services. Governed by New York law.";
     const pageKeywords = "Terms of Service, GroundWorks Development, website terms, service agreement, web development terms, AI integration terms, legal terms, website disclaimer, New York law";
     const pageType = "Page"

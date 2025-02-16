@@ -17,6 +17,38 @@
     line-height: 1.7;
 }
 
+/* Filters Container */
+.filters {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow filters to wrap on smaller screens */
+}
+
+/* Filter Button */
+.filter-button {
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.filter-button.active {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
 /* Projects Container (Grid Layout) */
 .projects-container {
     max-width: 1200px;
