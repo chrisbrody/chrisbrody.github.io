@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.47483298.css",
-    "main.js": "/static/js/main.e94a26dd.js",
+    "main.js": "/static/js/main.5a6105ba.js",
     "static/media/stratis1.png": "/static/media/stratis1.812575b6ddc8fd822ba4.png",
     "static/media/stratis3.png": "/static/media/stratis3.8acb7663c9a30cd91536.png",
     "static/media/monica-full.jpg": "/static/media/monica-full.d196826250990bd915a5.jpg",
@@ -27,10 +27,10 @@
     "static/media/gladden2.png": "/static/media/gladden2.dcf4396c8d3f4f788d48.png",
     "index.html": "/index.html",
     "main.47483298.css.map": "/static/css/main.47483298.css.map",
-    "main.e94a26dd.js.map": "/static/js/main.e94a26dd.js.map"
+    "main.5a6105ba.js.map": "/static/js/main.5a6105ba.js.map"
   },
   "entrypoints": [
     "static/css/main.47483298.css",
-    "static/js/main.e94a26dd.js"
+    "static/js/main.5a6105ba.js"
   ]
 }
