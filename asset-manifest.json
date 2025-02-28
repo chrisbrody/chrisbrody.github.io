@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e51bbd18.css",
-    "main.js": "/static/js/main.abc196b3.js",
+    "main.css": "/static/css/main.47483298.css",
+    "main.js": "/static/js/main.e94a26dd.js",
     "static/media/stratis1.png": "/static/media/stratis1.812575b6ddc8fd822ba4.png",
     "static/media/stratis3.png": "/static/media/stratis3.8acb7663c9a30cd91536.png",
     "static/media/monica-full.jpg": "/static/media/monica-full.d196826250990bd915a5.jpg",
@@ -22,16 +22,15 @@
     "static/media/mercury3.png": "/static/media/mercury3.bcecddff82800dd128f2.png",
     "static/media/gladden3.png": "/static/media/gladden3.c514bccda5c92f11d09b.png",
     "static/media/brody.jpg": "/static/media/brody.2adb4218eec9e8952ea4.jpg",
-    "static/media/logo.png": "/static/media/logo.51c331d7780dc4ce8da9.png",
     "static/media/stellis3.png": "/static/media/stellis3.aabf55d54f9f318e7008.png",
     "static/media/rialto3.png": "/static/media/rialto3.7ad07d352e474b2cda79.png",
     "static/media/gladden2.png": "/static/media/gladden2.dcf4396c8d3f4f788d48.png",
     "index.html": "/index.html",
-    "main.e51bbd18.css.map": "/static/css/main.e51bbd18.css.map",
-    "main.abc196b3.js.map": "/static/js/main.abc196b3.js.map"
+    "main.47483298.css.map": "/static/css/main.47483298.css.map",
+    "main.e94a26dd.js.map": "/static/js/main.e94a26dd.js.map"
   },
   "entrypoints": [
-    "static/css/main.e51bbd18.css",
-    "static/js/main.abc196b3.js"
+    "static/css/main.47483298.css",
+    "static/js/main.e94a26dd.js"
   ]
 }
