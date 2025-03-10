@@ -10,14 +10,14 @@ function ServicesSection() {
             id: 1,
             title: 'Web Development',
             description:
-                'Creating and revitalizing websites tailored to your business needs. We offer everything from custom design and development to SEO, marketing, and sales growth solutions.',
+                'Creating and revitalizing websites tailored to your business needs. I offer everything from custom design and development to SEO, marketing, and sales growth solutions.',
             icon: <FaGlobe />, // Globe Icon (representing the web)
         },
         {
             id: 2,
             title: 'AI Integration & Automation',
             description:
-                'Empowering your business with intelligent AI solutions. We build chatbots, voice bots, and sales automation systems to streamline processes, improve decision-making, and unlock new opportunities.',
+                'Empowering your business with intelligent AI solutions. I build chatbots, voice bots, and sales automation systems to streamline processes, improve decision-making, and unlock new opportunities.',
             icon: <FaRobot />, // Robot Icon
         },
     ];
@@ -25,7 +25,7 @@ function ServicesSection() {
     return (
         <div className="services-section">
             <FadeInOnScroll>
-                <h2>Our Key Services</h2>
+                <h2>Key Services</h2>
 
                 <div className="services-container">
                     {services.map((service) => (

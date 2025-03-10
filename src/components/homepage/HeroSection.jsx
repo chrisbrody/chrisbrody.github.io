@@ -6,8 +6,7 @@ function HeroSection() {
     return (
         <div className="hero-section">
             <div className="hero-content">
-                <h1>Expert Web Development & AI Integration.</h1>
-                <p>Direct Communication, Personalized Solutions, Exceptional Results.</p>
+                <h1>Hire Me - A Expert In Web Developer & Automation</h1>
                 <CTAButton href="https://calendly.com/groundworksdevelopment/30min">
                     Get a Free Consultation
                 </CTAButton>

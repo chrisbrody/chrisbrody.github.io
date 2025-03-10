@@ -5,7 +5,7 @@ import FadeInOnScroll from "../FadeInOnScroll";
 import Meta from "../Meta"
 
 function Services() {
-    const pageTitle = "Services | GroundWorks Development";
+    const pageTitle = "Services | Brody | GroundWorks Development";
     const pageDescription = "GroundWorks Development offers comprehensive web development and AI integration services, including custom websites, e-commerce solutions, AI-powered chatbots, data analysis, and more. Schedule a free consultation!";
     const pageKeywords = "web development services, AI integration services, custom website development, e-commerce development, Shopify development, WooCommerce development, mobile app development, AI-powered chatbots, data analysis, machine learning, SEO services, web design, website maintenance, AI consulting, voice bots, predictive analytics, GroundWorks Development";
     const pageType = "Page"
@@ -21,9 +21,9 @@ function Services() {
 
             <FadeInOnScroll>
             <header className="services-header">
-                <h1>Our Comprehensive Services</h1>
+                <h1>Services</h1>
                 <p>
-                    We offer a wide range of web development and AI integration
+                    I offer a wide range of web development and AI integration
                     services to help your business thrive in the digital age.
                 </p>
             </header>
@@ -33,7 +33,7 @@ function Services() {
                 <section className="service-category">
                     <h2>Web Development</h2>
                     <p>
-                        We specialize in creating custom websites, e-commerce platforms, and
+                        I specialize in creating custom websites, e-commerce platforms, and
                         web applications tailored to your specific business needs. Our
                         services include:
                     </p>
